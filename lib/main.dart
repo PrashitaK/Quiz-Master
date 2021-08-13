@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter/services.dart';
-// import 'package:quizapp2/helper/authenticate.dart';
 import 'package:quizapp2/helper/constants.dart';
 import 'package:quizapp2/views/home.dart';
 import 'package:quizapp2/views/signin.dart';
@@ -42,7 +40,7 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: (userLogin ?? false) ? Home() : SignIn(), //had authenticate here
+      home: (userLogin ?? false) ? Home() : SignIn(), 
     );
   }
 }
